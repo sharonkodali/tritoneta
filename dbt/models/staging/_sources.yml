@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  # Realtime snapshots are never loaded into the warehouse — dbt-duckdb reads the
+  # parquet files on disk directly. Adding a day of data is just dropping files
+  # in a folder; there is no load step to keep in sync.
+  - name: raw
+    description: Hive-partitioned GTFS-Realtime snapshots written by ingestion/poller.py.
+    meta:
+      external_location: >-
+        read_parquet(
+          '{{ env_var('DBT_RAW_DIR', '../data/raw') }}/{name}/*/*.parquet',
+          hive_partitioning = 1,
+          union_by_name = 1
+        )
+    tables:
+      - name: vehicle_positions
+        description: One row per vehicle per poll.
+      - name: trip_updates
+        description: One row per (trip, stop) arrival prediction per poll.
+
+  # The static schedule, loaded by ingestion/gtfs_static_loader.py.
+  - name: gtfs
+    schema: gtfs
+    description: GTFS static feed as published by MTS.
+    tables:
+      - name: routes
+      - name: trips
+      - name: stops
+      - name: stop_times

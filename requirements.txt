@@ -1,0 +1,23 @@
+# --- ingestion ---
+requests>=2.32
+gtfs-realtime-bindings>=1.0.0
+protobuf>=4.25
+python-dotenv>=1.0
+
+# --- storage / transformation ---
+pandas>=2.2
+pyarrow>=16.0
+duckdb>=1.0
+dbt-core>=1.8
+dbt-duckdb>=1.8
+
+# --- ml ---
+scikit-learn>=1.5
+joblib>=1.4
+
+# --- serving ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+
+# --- dev ---
+pytest>=8.0
