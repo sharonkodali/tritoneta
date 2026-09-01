@@ -1,32 +1,3 @@
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.pytest_cache/
-*.egg-info/
-
-# Secrets
-.env
-
-# Data — raw feeds and the warehouse are regenerable; never commit them.
-# Small curated samples under data/samples/ are the exception (see data/README.md).
-data/raw/
-data/gtfs_static/
-data/*.duckdb
-data/*.duckdb.wal
-data/*.parquet
-
-# ML artifacts
-ml/artifacts/
-*.joblib
-
-# dbt
-dbt/target/
-dbt/dbt_packages/
-dbt/logs/
-.user.yml
-
-# OS / editor
-.DS_Store
-.ipynb_checkpoints/
+data/*
+!data/.gitkeep
+!data/samples/
