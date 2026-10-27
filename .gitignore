@@ -2,3 +2,8 @@ data/*
 !data/.gitkeep
 !data/samples/
 node_modules/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
