@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: int_active_service_dates
+    description: The feed version and service_id in effect on each date, after holiday exceptions.
+
+  - name: int_route_stops
+    description: Every stop served by each route, with its position in the loop.
+
+  - name: int_scheduled_stop_visits
+    description: The schedule expanded onto real dates; one row per scheduled stop visit.
+    columns:
+      - name: scheduled_arrival_local
+        data_tests: [not_null]
+
+  - name: int_position_segments
+    description: Consecutive GPS fixes of a vehicle paired into segments (gaps of at most max_ping_gap_seconds).
+    columns:
+      - name: gap_seconds
+        data_tests: [not_null]
+
+  - name: int_observed_stop_visits
+    description: >
+      When each vehicle actually passed each stop, found by projecting stops
+      onto GPS segments and interpolating the time of closest approach.
+      Repeated matches while dwelling are collapsed into one visit.
+    columns:
+      - name: visit_id
+        data_tests: [unique, not_null]
+      - name: closest_distance_m
+        description: Closest approach to the stop, in meters (always within stop_match_radius_m).
+      - name: dwell_seconds
+        description: Time between first and last matched passage at the stop.
+
+  - name: int_vehicle_runs
+    description: Stop visits grouped into runs, one lap of a vehicle around its route.
+    columns:
+      - name: visit_id
+        data_tests: [unique, not_null]
+      - name: run_id
+        data_tests: [not_null]

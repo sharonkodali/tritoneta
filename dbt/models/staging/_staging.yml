@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: stg_gtfs_rt__vehicle_positions
+    description: Deduplicated GPS fixes in local time, filtered to the San Diego service area.
+    columns:
+      - name: position_id
+        description: Hash of vehicle_id and vehicle_timestamp.
+        data_tests: [unique, not_null]
+      - name: vehicle_id
+        data_tests: [not_null]
+      - name: route_id
+        data_tests: [not_null]
+      - name: observed_at_local
+        description: GPS fix time converted to America/Los_Angeles.
+        data_tests: [not_null]
+
+  - name: stg_gtfs__routes
+    description: Routes from every GTFS feed version.
+    columns:
+      - name: route_id
+        data_tests: [not_null]
+
+  - name: stg_gtfs__stops
+    description: Stop names and coordinates from every GTFS feed version.
+    columns:
+      - name: stop_id
+        data_tests: [not_null]
+      - name: stop_lat
+        data_tests: [not_null]
+      - name: stop_lon
+        data_tests: [not_null]
+
+  - name: stg_gtfs__trips
+    description: Scheduled trips per route and service pattern.
+    columns:
+      - name: trip_id
+        data_tests: [not_null]
+
+  - name: stg_gtfs__stop_times
+    description: Scheduled arrival/departure at each stop of each trip, in seconds from the start of the service day.
+    columns:
+      - name: arrival_seconds
+        description: Seconds after midnight of the service day; may exceed 86400 for trips past midnight.
+        data_tests: [not_null]
+
+  - name: stg_gtfs__calendar
+    description: Weekly service patterns and the date range each feed covers.
+
+  - name: stg_gtfs__calendar_dates
+    description: Service added or removed on specific dates (holidays).
+    columns:
+      - name: exception_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2]

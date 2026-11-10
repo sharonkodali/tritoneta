@@ -1,0 +1,10 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color,route_text_color
+1020,UCSD,S,SIO Shuttle,Connects the Scripps Institution of Oceanography; Birch Aquarium and the beach at Scripps Seaside Forum to the Central Campus at the Gilman Transit Center; with connections to regional bus services.,3,90a7d3,
+1010,UCSD,R,Regents Express,Connects the East Campus commuter parking lots; UC San Diego Health La Jolla; including connections to the UC San Diego Blue Line at the UC San Diego Health La Jolla Station; Central Campus Station; and regional buses.,3,6e963b,
+1050,UCSD,ML,Mesa Loop,Connects the Mesa residential community and UC San Diego Health La Jolla medical facilities; to the main campus and UC San Diego Extension locations via a counter-clockwise loop.,3,fc8900,
+1030,UCSD,OL,Outside Loop,Circles the central campus in a counter-clockwise direction; including connections to regional bus service at the Gilman Transit Center and the UC San Diego Blue Line Trolley at the Central Campus Station.,3,20183d,
+1060,UCSD,GC,Grocery-Convoy,Connects the Central Campus and Mesa residential community to the Clairemont and Convoy shopping area.,3,c09338,
+1040,UCSD,IL,Inside Loop,Circles the central campus in a clockwise direction; including connections to regional bus service at the Gilman Transit Center and the UC San Diego Blue Line Trolley at the Central Campus Station.,3,ffcd00,
+1070,UCSD,ILD,Inside Loop Detour,Shortened Campus Loop service due to event road closures.,3,0a11e6,faf5f5
+1090,UCSD,VA,VA Express,VA Express,3,e40c0c,
+3040,UCSD,SIO Alternate Route Detour ,Scripps Institution ,P003 Drop off ,3,d79dcf,

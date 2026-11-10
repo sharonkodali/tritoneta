@@ -51,7 +51,7 @@ UCSD GTFS + Real-Time Data
           ↓
      Data Ingestion
           ↓
-    PostgreSQL / dbt
+    DuckDB / dbt
           ↓
    Data Cleaning + Features
           ↓
@@ -95,6 +95,11 @@ UCSD GTFS + Real-Time Data
 
 ## 🚧 Current Status
 
-**Nothing has been built yet.**
+**Data pipeline: working.** Raw GPS pings are turned into a stop-level delay metric and a labeled training set for the ETA model. See [docs/data-pipeline.md](docs/data-pipeline.md) for lineage, methodology, and results.
 
-Currently in the **ideation and planning phase**, with the next priority being understanding the UCSD transit data and getting the real-time data collection pipeline running.
+- 180K GPS events from 28 shuttles on 6 routes (Sep 10 – Oct 12, 2026), with scheduled GitHub Actions collection going forward
+- 15 dbt models (staging → intermediate → marts) with 29 data tests
+- 30,946 stop visits matched to the schedule; 63% on time overall
+- 27,166-row training set with a time-based train/test split
+
+**Next:** train and evaluate the arrival-time model, then connect predictions to the backend API and map.

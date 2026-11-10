@@ -1,0 +1,66 @@
+name: Collect vehicle positions
+
+# Polls the Triton Transit GTFS-Realtime feed for 25 minutes every half hour
+# during service hours and commits each run's Parquet file to the `data`
+# branch, so raw data accumulates without a machine left running.
+on:
+  schedule:
+    # Every 30 min, 14:00-06:59 UTC = roughly 7am-11pm Pacific.
+    - cron: "*/30 14-23,0-6 * * *"
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: Minutes to poll
+        default: "25"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-positions
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements-data.txt
+
+      - run: pip install -r requirements-data.txt
+
+      - name: Poll feed
+        run: python ingestion/collect_positions.py --minutes "${{ inputs.minutes || '25' }}"
+
+      - name: Commit new file to the data branch
+        run: |
+          shopt -s nullglob
+          files=(data/raw/positions/*_actions.parquet)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No vehicles reported this run; nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin data > /dev/null; then
+            git fetch --depth 1 origin data
+            git worktree add ../data-branch FETCH_HEAD
+            git -C ../data-branch switch -c data
+          else
+            git worktree add --orphan -b data ../data-branch
+          fi
+
+          mkdir -p ../data-branch/data/raw/positions
+          cp "${files[@]}" ../data-branch/data/raw/positions/
+          cd ../data-branch
+          git add data/raw/positions
+          git commit -m "data: collect positions $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin data

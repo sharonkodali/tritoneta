@@ -1,0 +1,57 @@
+name: dbt build
+
+# Rebuilds every model and runs every data test against all raw data
+# (committed history on main plus anything the collector has added to the
+# `data` branch). Publishes the training set and dbt docs as artifacts.
+on:
+  push:
+    branches: [main]
+    paths: ["dbt/**", "data/**", "ingestion/**", "requirements-data.txt", ".github/workflows/dbt_build.yml"]
+  pull_request:
+    paths: ["dbt/**", "data/**", "ingestion/**", "requirements-data.txt", ".github/workflows/dbt_build.yml"]
+  schedule:
+    - cron: "0 8 * * *" # daily, after the last collection run
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements-data.txt
+
+      - run: pip install -r requirements-data.txt
+
+      - name: Pull collected positions from the data branch
+        run: |
+          if git ls-remote --exit-code --heads origin data > /dev/null; then
+            git fetch --depth 1 origin data
+            git checkout FETCH_HEAD -- data/raw/positions
+          fi
+          ls data/raw/positions | wc -l
+
+      - name: dbt build
+        working-directory: dbt
+        run: |
+          mkdir -p ../data/processed
+          dbt build --profiles-dir .
+          dbt docs generate --profiles-dir .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eta-training-set
+          path: data/processed/eta_training_set.parquet
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dbt-docs
+          path: |
+            dbt/target/index.html
+            dbt/target/manifest.json
+            dbt/target/catalog.json

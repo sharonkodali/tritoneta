@@ -1,0 +1,207 @@
+route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id
+1050,3,162_0,Mesa Loop,1,ML-1,2
+1050,3,162_1,Mesa Loop,1,ML-1,2
+1050,3,162_2,Mesa Loop,1,ML-1,2
+1050,3,162_3,Mesa Loop,1,ML-1,2
+1050,3,162_4,Mesa Loop,1,ML-1,2
+1050,3,162_5,Mesa Loop,1,ML-1,2
+1050,3,162_6,Mesa Loop,1,ML-1,2
+1050,3,162_7,Mesa Loop,1,ML-1,2
+1050,3,162_8,Mesa Loop,1,ML-1,2
+1050,3,162_9,Mesa Loop,1,ML-1,2
+1050,3,162_10,Mesa Loop,1,ML-1,2
+1050,3,162_11,Mesa Loop,1,ML-1,2
+1050,3,162_12,Mesa Loop,1,ML-1,2
+1050,3,162_13,Mesa Loop,1,ML-1,2
+1050,3,162_14,Mesa Loop,1,ML-1,2
+1050,3,162_15,Mesa Loop,1,ML-1,2
+1050,3,162_16,Mesa Loop,1,ML-1,2
+1050,3,162_17,Mesa Loop,1,ML-1,2
+1050,3,162_18,Mesa Loop,1,ML-1,2
+1050,3,162_19,Mesa Loop,1,ML-1,2
+1050,3,162_20,Mesa Loop,1,ML-1,2
+1040,3,278_0,Inside Loop,1,IL-1,6
+1040,3,278_1,Inside Loop,1,IL-1,6
+1040,3,278_2,Inside Loop,1,IL-1,6
+1040,3,278_3,Inside Loop,1,IL-1,6
+1040,3,278_4,Inside Loop,1,IL-1,6
+1040,3,278_5,Inside Loop,1,IL-1,6
+1040,3,278_6,Inside Loop,1,IL-1,6
+1040,3,278_7,Inside Loop,1,IL-1,6
+1040,3,278_8,Inside Loop,1,IL-1,6
+1040,3,278_9,Inside Loop,1,IL-1,6
+1040,3,278_10,Inside Loop,1,IL-1,6
+1040,3,278_11,Inside Loop,1,IL-1,6
+1040,3,278_12,Inside Loop,1,IL-1,6
+1040,3,278_13,Inside Loop,1,IL-1,6
+1040,3,278_14,Inside Loop,1,IL-1,6
+1040,3,278_15,Inside Loop,1,IL-1,6
+1040,3,278_16,Inside Loop,1,IL-1,6
+1040,3,278_17,Inside Loop,1,IL-1,6
+1040,3,278_18,Inside Loop,1,IL-1,6
+1040,3,278_19,Inside Loop,1,IL-1,6
+1040,3,278_20,Inside Loop,1,IL-1,6
+1040,4,279_0,Inside Loop,1,IL-1,6
+1040,4,279_1,Inside Loop,1,IL-1,6
+1040,4,279_2,Inside Loop,1,IL-1,6
+1040,4,279_3,Inside Loop,1,IL-1,6
+1040,4,279_4,Inside Loop,1,IL-1,6
+1040,4,279_5,Inside Loop,1,IL-1,6
+1040,4,279_6,Inside Loop,1,IL-1,6
+1040,4,279_7,Inside Loop,1,IL-1,6
+1040,4,279_8,Inside Loop,1,IL-1,6
+1040,4,279_9,Inside Loop,1,IL-1,6
+1040,4,279_10,Inside Loop,1,IL-1,6
+1040,4,279_11,Inside Loop,1,IL-1,6
+1040,4,279_12,Inside Loop,1,IL-1,6
+1040,4,279_13,Inside Loop,1,IL-1,6
+1040,4,279_14,Inside Loop,1,IL-1,6
+1040,4,279_15,Inside Loop,1,IL-1,6
+1020,3,334_0,SIO,1,S-1,5
+1020,3,334_1,SIO,1,S-1,5
+1020,3,334_2,SIO,1,S-1,5
+1020,3,334_3,SIO,1,S-1,5
+1020,3,334_4,SIO,1,S-1,5
+1020,3,334_5,SIO,1,S-1,5
+1020,3,334_6,SIO,1,S-1,5
+1020,3,334_7,SIO,1,S-1,5
+1020,3,334_8,SIO,1,S-1,5
+1020,3,334_9,SIO,1,S-1,5
+1020,3,334_10,SIO,1,S-1,5
+1020,3,334_11,SIO,1,S-1,5
+1020,3,334_12,SIO,1,S-1,5
+1020,3,334_13,SIO,1,S-1,5
+1020,3,334_14,SIO,1,S-1,5
+1020,3,334_15,SIO,1,S-1,5
+1020,3,334_16,SIO,1,S-1,5
+1020,3,334_17,SIO,1,S-1,5
+1020,3,334_18,SIO,1,S-1,5
+1020,3,334_19,SIO,1,S-1,5
+1020,3,334_20,SIO,1,S-1,5
+1020,4,335_0,SIO,1,S-1,5
+1020,4,335_1,SIO,1,S-1,5
+1020,4,335_2,SIO,1,S-1,5
+1020,4,335_3,SIO,1,S-1,5
+1020,4,335_4,SIO,1,S-1,5
+1020,4,335_5,SIO,1,S-1,5
+1020,4,335_6,SIO,1,S-1,5
+1020,4,335_7,SIO,1,S-1,5
+1020,4,335_8,SIO,1,S-1,5
+1020,4,335_9,SIO,1,S-1,5
+1020,4,335_10,SIO,1,S-1,5
+1020,4,335_11,SIO,1,S-1,5
+1020,4,335_12,SIO,1,S-1,5
+1020,4,335_13,SIO,1,S-1,5
+1020,4,335_14,SIO,1,S-1,5
+1020,4,335_15,SIO,1,S-1,5
+1060,4,337_0,Grocery-Convoy,1,GC-1,1
+1060,4,337_1,Grocery-Convoy,1,GC-2,1
+1060,4,337_2,Grocery-Convoy,1,GC-1,1
+1060,4,337_3,Grocery-Convoy,1,GC-2,1
+1060,4,337_4,Grocery-Convoy,1,GC-1,1
+1060,4,337_5,Grocery-Convoy,1,GC-2,1
+1060,4,337_6,Grocery-Convoy,1,GC-1,1
+1060,4,337_7,Grocery-Convoy,1,GC-2,1
+1060,4,337_8,Grocery-Convoy,1,GC-1,1
+1060,4,337_9,Grocery-Convoy,1,GC-2,1
+1060,4,337_10,Grocery-Convoy,1,GC-1,1
+1060,4,337_11,Grocery-Convoy,1,GC-2,1
+1060,4,337_12,Grocery-Convoy,1,GC-1,1
+1060,4,337_13,Grocery-Convoy,1,GC-2,1
+1060,4,337_14,Grocery-Convoy,1,GC-1,1
+1040,3,340_0,Inside Loop,1,IL-2,6
+1040,3,340_1,Inside Loop,1,IL-2,6
+1040,3,340_2,Inside Loop,1,IL-2,6
+1040,3,340_3,Inside Loop,1,IL-2,6
+1040,3,340_4,Inside Loop,1,IL-2,6
+1040,3,340_5,Inside Loop,1,IL-2,6
+1040,3,340_6,Inside Loop,1,IL-2,6
+1040,3,340_7,Inside Loop,1,IL-2,6
+1040,3,340_8,Inside Loop,1,IL-2,6
+1040,3,340_9,Inside Loop,1,IL-2,6
+1040,3,340_10,Inside Loop,1,IL-2,6
+1040,3,340_11,Inside Loop,1,IL-2,6
+1040,3,340_12,Inside Loop,1,IL-2,6
+1040,3,340_13,Inside Loop,1,IL-2,6
+1040,3,340_14,Inside Loop,1,IL-2,6
+1040,3,340_15,Inside Loop,1,IL-2,6
+1040,3,340_16,Inside Loop,1,IL-2,6
+1040,3,340_17,Inside Loop,1,IL-2,6
+1040,3,340_18,Inside Loop,1,IL-2,6
+1040,3,340_19,Inside Loop,1,IL-2,6
+1010,3,341_0,Regents Express,1,R-1,4
+1010,3,341_1,Regents Express,1,R-1,4
+1010,3,341_2,Regents Express,1,R-1,4
+1010,3,341_3,Regents Express,1,R-1,4
+1010,3,341_4,Regents Express,1,R-1,4
+1010,3,341_5,Regents Express,1,R-1,4
+1010,3,341_6,Regents Express,1,R-1,4
+1010,3,341_7,Regents Express,1,R-1,4
+1010,3,341_8,Regents Express,1,R-1,4
+1010,3,341_9,Regents Express,1,R-1,4
+1010,3,341_10,Regents Express,1,R-1,4
+1010,3,341_11,Regents Express,1,R-1,4
+1010,3,341_12,Regents Express,1,R-1,4
+1010,3,341_13,Regents Express,1,R-1,4
+1010,3,341_14,Regents Express,1,R-1,4
+1010,3,341_15,Regents Express,1,R-1,4
+1010,3,341_16,Regents Express,1,R-1,4
+1010,3,341_17,Regents Express,1,R-1,4
+1010,3,341_18,Regents Express,1,R-1,4
+1010,3,341_19,Regents Express,1,R-1,4
+1010,3,341_20,Regents Express,1,R-1,4
+1010,3,341_21,Regents Express,1,R-1,4
+1010,3,341_22,Regents Express,1,R-1,4
+1010,3,341_23,Regents Express,1,R-1,4
+1010,3,341_24,Regents Express,1,R-1,4
+1010,3,341_25,Regents Express,1,R-1,4
+1010,3,341_26,Regents Express,1,R-1,4
+1010,3,341_27,Regents Express,1,R-1,4
+1010,3,341_28,Regents Express,1,R-1,4
+1010,3,341_29,Regents Express,1,R-1,4
+1010,3,341_30,Regents Express,1,R-1,4
+1010,3,341_31,Regents Express,1,R-1,4
+3040,3,350_0,Gilman Transit Center (South),0,,9
+3040,3,351_0,Gilman Transit Center (South),0,,9
+3040,3,352_0,Gilman Transit Center (South),0,,9
+3040,3,353_0,Gilman Transit Center (South),0,,9
+3040,3,354_0,Gilman Transit Center (South),0,,9
+3040,3,355_0,Gilman Transit Center (South),0,,9
+3040,3,356_0,Gilman Transit Center (South),0,,9
+3040,3,357_0,Gilman Transit Center (South),0,,9
+3040,3,358_0,Gilman Transit Center (South),0,,9
+3040,3,359_0,Gilman Transit Center (South),0,,9
+3040,3,359_1,Gilman Transit Center (South),0,,9
+3040,3,359_2,Gilman Transit Center (South),0,,9
+3040,3,359_3,Gilman Transit Center (South),0,,9
+3040,3,359_4,Gilman Transit Center (South),0,,9
+3040,3,359_5,Gilman Transit Center (South),0,,9
+3040,3,359_6,Gilman Transit Center (South),0,,9
+3040,3,359_7,Gilman Transit Center (South),0,,9
+3040,3,359_8,Gilman Transit Center (South),0,,9
+3040,3,359_9,Gilman Transit Center (South),0,,9
+3040,3,359_10,Gilman Transit Center (South),0,,9
+3040,3,359_11,Gilman Transit Center (South),0,,9
+3040,3,359_12,Gilman Transit Center (South),0,,9
+3040,3,359_13,Gilman Transit Center (South),0,,9
+3040,3,359_14,Gilman Transit Center (South),0,,9
+3040,3,359_15,Gilman Transit Center (South),0,,9
+3040,3,359_16,Gilman Transit Center (South),0,,9
+3040,3,359_17,Gilman Transit Center (South),0,,9
+3040,3,359_18,Gilman Transit Center (South),0,,9
+3040,3,359_19,Gilman Transit Center (South),0,,9
+3040,3,359_20,Gilman Transit Center (South),0,,9
+3040,3,359_21,Gilman Transit Center (South),0,,9
+3040,3,359_22,Gilman Transit Center (South),0,,9
+3040,3,359_23,Gilman Transit Center (South),0,,9
+3040,3,359_24,Gilman Transit Center (South),0,,9
+3040,3,360_0,Gilman Transit Center (South),0,,9
+3040,3,361_0,Gilman Transit Center (South),0,,9
+3040,3,362_0,Gilman Transit Center (South),0,,9
+3040,3,363_0,Gilman Transit Center (South),0,,9
+3040,3,364_0,Gilman Transit Center (South),0,,9
+3040,3,365_0,Gilman Transit Center (South),0,,9
+3040,3,366_0,Gilman Transit Center (South),0,,9
+3040,3,367_0,Gilman Transit Center (South),0,,9
+3040,3,368_0,Gilman Transit Center (South),0,,9
+3040,3,369_0,Gilman Transit Center (South),0,,9

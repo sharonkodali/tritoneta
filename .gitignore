@@ -1,9 +1,20 @@
 data/*
 !data/.gitkeep
 !data/samples/
+!data/gtfs/
+!data/raw/
+data/raw/*
+!data/raw/positions/
 node_modules/
 
 # Python
 .venv/
 __pycache__/
 *.py[cod]
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+*.duckdb
+*.duckdb.wal
