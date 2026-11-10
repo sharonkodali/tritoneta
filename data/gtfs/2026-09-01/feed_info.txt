@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_email
+Spare,http://www.spare.com,en,20260601,20260919,2026-09-01,support@spare.com

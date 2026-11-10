@@ -1,0 +1,7 @@
+service_id,date,exception_type,holiday_name
+2,20261126,2,Thanksgiving Day Observed
+1,20261111,2,Veterans Day
+2,20261127,2,Day After Thanksgiving Observed
+1,20261126,2,Thanksgiving
+1,20261127,2,Thanksgiving
+2,20261111,2,Veterans Day Observed

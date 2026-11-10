@@ -1,0 +1,69 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon,zone_id,wheelchair_boarding
+2055,RIMAC / Hopkins Parking Structure (West),,32.884328,-117.23869,,0
+2060,Franklin Antonio / Atkinson Halls (South),,32.882873,-117.235179,,0
+2515,P782 Parking Lot,,32.876441,-117.21916,,0
+3005,UCSD Extended Studies Building (North),,32.871886,-117.234716,,0
+3040,Eckart Building / Hubbs Hall,,32.866324,-117.252712,,0
+3045,Scripps Seaside Forum / Beach,,32.865352,-117.253931,,0
+3055,Nierenberg Hall,,32.869245,-117.251025,,0
+3060,Birch Aquarium,,32.866286,-117.250312,,0
+3065,Coast Apartments (South),,32.86901,-117.246914,,0
+3070,Expedition Wy & Capricorn Ln,,32.870854,-117.243758,,0
+3505,Athena Parking Structure,,32.879164,-117.222168,,0
+1510,RIMAC / Hopkins Parking Structure (East),,32.88445,-117.238616,,0
+1505,Franklin Antonio / Atkinson Halls (North),,32.882977,-117.235258,,0
+1520,Seventh College (West),,32.887713,-117.242361,,0
+1525,Eleanor Roosevelt / Seventh Colleges (West),,32.886462,-117.2425,,0
+1530,Eleanor Roosevelt / Marshall Colleges (West),,32.884176,-117.242484,,0
+1535,Sixth College (West),,32.879964,-117.242487,,0
+1540,Muir College (West),,32.877819,-117.24372,,0
+1545,Revelle College (West),,32.875515,-117.243166,,0
+2030,Muir College (East),,32.877838,-117.243607,,0
+2035,Sixth College (East),,32.880711,-117.242371,,0
+2040,Eleanor Roosevelt / Marshall Colleges (East),,32.884335,-117.242348,,0
+2045,Eleanor Roosevelt / Seventh Colleges (East),,32.886558,-117.242369,,0
+2050,Seventh College (East),,32.888332,-117.242094,,0
+11528,Coast Apartments (West),,32.869563,-117.248512,,0
+11852,Southwest Fisheries,,32.86973,-117.251695,,0
+11873,La Jolla Shores Dr & Inyaha Ln,,32.874076,-117.244956,,0
+11902,Gilman Transit Center (South),,32.876952,-117.234952,,0
+12284,Vaughan Hall,,32.865726,-117.252189,,0
+12788,Convoy St & Engineer Rd,,32.827011,-117.15405,,0
+13002,Balboa Av & Gerald Griffin Drwy,,32.821628,-117.157856,,0
+24150,Eighth College / Theatre District (South),,32.872084,-117.241795,,0
+24151,Eighth College / Theatre District (North),,32.871718,-117.242206,,0
+88986,UCSD Central Campus Trolley,,32.8793,-117.231916,,0
+99447,Balboa Av & Shopping Center Drwy,,32.819949,-117.17948,,0
+10378,UCSD Extended Studies Building (South),,32.871524,-117.233241,,0
+11850,IGPP,,32.867439,-117.252156,,0
+3510,UCSD Health La Jolla Trolley (North),,32.882449,-117.223832,,0
+4005,Clairemont Mesa Bl & Onondaga Av (La Tiendita),,32.827611,-117.205011,,0
+4006,Clairemont Mesa Bl & Kleefeld Av (Median),,32.832711,-117.200898,,0
+9902,Ridge Walk Mobility Hub,,32.888709,-117.240648,,0
+9903,Gilman Dr & Pepper Canyon Dr (North),,32.876343,-117.230416,,0
+9904,WongAvery Library (East),,32.874461,-117.23834,,0
+9906,Warren Field (South),,32.880989,-117.229831,,0
+9908,WongAvery Library (West),,32.874272,-117.238416,,0
+9910,Revelle College (East),,32.875574,-117.243091,,0
+9911,Warren Field (North),,32.880735,-117.230701,,0
+9912,Mesa Nueva,,32.875787,-117.223533,,0
+9913,Nuevo East,,32.875523,-117.220426,,0
+9914,P785 Parking Lot,,32.878701,-117.220433,,0
+9915,Koman Outpatient / Moores Cancer,,32.87765,-117.223062,,0
+9916,Jacobs Medical Center,,32.876445,-117.226703,,0
+9917,Central Mesa,,32.872669,-117.221346,,0
+9918,Nuevo West,,32.874402,-117.225857,,0
+9919,P703 / Regents Parking Lots,,32.879802,-117.220002,,0
+9920,UCSD Health La Jolla Trolley (South),,32.88174,-117.222669,,0
+9921,Gilman Dr & Mandeville Ln,,32.876954,-117.237963,,0
+10772,Gilman Transit Center (North),,32.877111,-117.237377,,0
+11247,Clairemont Mesa Bl & Ruffner St,,32.832826,-117.15958,,0
+11255,Clairemont Mesa Bl & Convoy St,,32.832893,-117.153821,,0
+777771,N Torrey Pines & Muir Tennis Courts (East),Temp Stop - N Torrey Pines & Muir Tennis Courts (East),32.87788356378463,-117.24378414893975,,1
+777772,N Torrey Pines Rd & Muir College Dr,Temporary Stop - N Torrey Pines Rd & Muir College Dr,32.881353457152926,-117.24375700854436,,1
+777773,Pangea Dr & Scholars Dr (South),Temporary Stop - Pangea Dr & Scholars Dr (South),32.88374418138885,-117.24298570361506,,1
+88988,Villa La Jolla & VA Hospital (West),Villa La Jolla & VA Hospital (West),32.8747757988706,-117.2337597684944,,0
+3046,P003,SIO Detour Stop in P003,32.864132019931056,-117.25374656738535,,0
+13129,La Jolla Shores Dr & Naga Way,La Jolla Shores Dr & Naga Way,32.865277,-117.252338,,0
+88962,VA Hospital (East),VA Hospital (East),32.874908148735415,-117.23343628238946,,0
+6001,Regents Rd & Athena Wy,Regents Rd & Athena Wy,32.87666619924372,-117.21847305150634,,1

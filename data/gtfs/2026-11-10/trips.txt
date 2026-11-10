@@ -1,0 +1,375 @@
+route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id
+1010,1,370_0,Regents Express,0,R-1,10
+1010,1,370_1,Regents Express,0,R-1,10
+1010,1,370_2,Regents Express,0,R-1,10
+1010,1,370_3,Regents Express,0,R-1,10
+1010,1,370_4,Regents Express,0,R-1,10
+1010,1,370_5,Regents Express,0,R-1,10
+1010,1,370_6,Regents Express,0,R-1,10
+1010,1,370_7,Regents Express,0,R-1,10
+1010,1,370_8,Regents Express,0,R-1,10
+1010,1,370_9,Regents Express,0,R-1,10
+1010,1,370_10,Regents Express,0,R-1,10
+1010,1,370_11,Regents Express,0,R-1,10
+1010,1,370_12,Regents Express,0,R-1,10
+1010,1,370_13,Regents Express,0,R-1,10
+1010,1,370_14,Regents Express,0,R-1,10
+1010,1,370_15,Regents Express,0,R-1,10
+1010,1,370_16,Regents Express,0,R-1,10
+1010,1,370_17,Regents Express,0,R-1,10
+1010,1,370_18,Regents Express,0,R-1,10
+1010,1,370_19,Regents Express,0,R-1,10
+1010,1,370_20,Regents Express,0,R-1,10
+1010,1,370_21,Regents Express,0,R-1,10
+1010,1,370_22,Regents Express,0,R-1,10
+1010,1,370_23,Regents Express,0,R-1,10
+1010,1,370_24,Regents Express,0,R-1,10
+1010,1,370_25,Regents Express,0,R-1,10
+1010,1,370_26,Regents Express,0,R-1,10
+1010,1,370_27,Regents Express,0,R-1,10
+1010,1,370_28,Regents Express,0,R-1,10
+1010,1,370_29,Regents Express,0,R-1,10
+1010,1,370_30,Regents Express,0,R-1,10
+1010,1,370_31,Regents Express,0,R-1,10
+1010,1,370_32,Regents Express,0,R-1,10
+1010,1,370_33,Regents Express,0,R-1,10
+1010,1,370_34,Regents Express,0,R-1,10
+1010,1,370_35,Regents Express,0,R-1,10
+1010,1,370_36,Regents Express,0,R-1,10
+1010,1,370_37,Regents Express,0,R-1,10
+1010,1,370_38,Regents Express,0,R-1,10
+1010,1,370_39,Regents Express,0,R-1,10
+1010,1,370_40,Regents Express,0,R-1,10
+1010,1,370_41,Regents Express,0,R-1,10
+1010,1,370_42,Regents Express,0,R-1,10
+1010,1,370_43,Regents Express,0,R-1,10
+1010,1,370_44,Regents Express,0,R-1,10
+1010,1,370_45,Regents Express,0,R-1,10
+1040,1,375_0,Inside Loop,0,IL-1,14
+1040,1,375_1,Inside Loop,0,IL-1,14
+1040,1,375_2,Inside Loop,0,IL-1,14
+1040,1,375_3,Inside Loop,0,IL-1,14
+1040,1,375_4,Inside Loop,0,IL-1,14
+1040,1,375_5,Inside Loop,0,IL-1,14
+1040,1,375_6,Inside Loop,0,IL-1,14
+1040,1,375_7,Inside Loop,0,IL-1,14
+1040,1,375_8,Inside Loop,0,IL-1,14
+1040,1,375_9,Inside Loop,0,IL-1,14
+1040,1,375_10,Inside Loop,0,IL-1,14
+1040,1,375_11,Inside Loop,0,IL-1,14
+1040,1,375_12,Inside Loop,0,IL-1,14
+1040,1,375_13,Inside Loop,0,IL-1,14
+1040,1,375_14,Inside Loop,0,IL-1,14
+1040,1,375_15,Inside Loop,0,IL-1,14
+1040,1,375_16,Inside Loop,0,IL-1,14
+1040,1,375_17,Inside Loop,0,IL-1,14
+1040,1,375_18,Inside Loop,0,IL-1,14
+1040,1,375_19,Inside Loop,0,IL-1,14
+1040,1,375_20,Inside Loop,0,IL-1,14
+1040,1,375_21,Inside Loop,0,IL-1,14
+1040,1,375_22,Inside Loop,0,IL-1,14
+1040,1,375_23,Inside Loop,0,IL-1,14
+1040,1,375_24,Inside Loop,0,IL-1,14
+1040,1,375_25,Inside Loop,0,IL-1,14
+1040,1,375_26,Inside Loop,0,IL-1,14
+1040,1,375_27,Inside Loop,0,IL-1,14
+1040,1,375_28,Inside Loop,0,IL-1,14
+1040,2,377_0,Inside Loop,0,IL-1,14
+1040,2,377_1,Inside Loop,0,IL-1,14
+1040,2,377_2,Inside Loop,0,IL-1,14
+1040,2,377_3,Inside Loop,0,IL-1,14
+1040,2,377_4,Inside Loop,0,IL-1,14
+1040,2,377_5,Inside Loop,0,IL-1,14
+1040,2,377_6,Inside Loop,0,IL-1,14
+1040,2,377_7,Inside Loop,0,IL-1,14
+1040,2,377_8,Inside Loop,0,IL-1,14
+1040,2,377_9,Inside Loop,0,IL-1,14
+1040,2,377_10,Inside Loop,0,IL-1,14
+1040,2,377_11,Inside Loop,0,IL-1,14
+1040,2,377_12,Inside Loop,0,IL-1,14
+1040,2,377_13,Inside Loop,0,IL-1,14
+1040,2,377_14,Inside Loop,0,IL-1,14
+1040,2,377_15,Inside Loop,0,IL-1,14
+1030,1,379_0,Outside Loop,0,OL-1,15
+1030,1,379_1,Outside Loop,0,OL-1,15
+1030,1,379_2,Outside Loop,0,OL-1,15
+1030,1,379_3,Outside Loop,0,OL-1,15
+1030,1,379_4,Outside Loop,0,OL-1,15
+1030,1,379_5,Outside Loop,0,OL-1,15
+1030,1,379_6,Outside Loop,0,OL-1,15
+1030,1,379_7,Outside Loop,0,OL-1,15
+1030,1,379_8,Outside Loop,0,OL-1,15
+1030,1,379_9,Outside Loop,0,OL-1,15
+1030,1,379_10,Outside Loop,0,OL-1,15
+1030,1,379_11,Outside Loop,0,OL-1,15
+1030,1,379_12,Outside Loop,0,OL-1,15
+1030,1,379_13,Outside Loop,0,OL-1,15
+1030,1,379_14,Outside Loop,0,OL-1,15
+1030,1,379_15,Outside Loop,0,OL-1,15
+1030,1,379_16,Outside Loop,0,OL-1,15
+1030,1,379_17,Outside Loop,0,OL-1,15
+1030,1,379_18,Outside Loop,0,OL-1,15
+1030,1,379_19,Outside Loop,0,OL-1,15
+1030,1,379_20,Outside Loop,0,OL-1,15
+1030,1,379_21,Outside Loop,0,OL-1,15
+1030,1,379_22,Outside Loop,0,OL-1,15
+1030,1,379_23,Outside Loop,0,OL-1,15
+1030,1,379_24,Outside Loop,0,OL-1,15
+1030,1,379_25,Outside Loop,0,OL-1,15
+1030,1,379_26,Outside Loop,0,OL-1,15
+1030,1,379_27,Outside Loop,0,OL-1,15
+1030,1,379_28,Outside Loop,0,OL-1,15
+1030,1,379_29,Outside Loop,0,OL-1,15
+1050,1,381_0,Mesa Loop,0,ML-1,12
+1050,1,381_1,Mesa Loop,0,ML-1,12
+1050,1,381_2,Mesa Loop,0,ML-1,12
+1050,1,381_3,Mesa Loop,0,ML-1,12
+1050,1,381_4,Mesa Loop,0,ML-1,12
+1050,1,381_5,Mesa Loop,0,ML-1,12
+1050,1,381_6,Mesa Loop,0,ML-1,12
+1050,1,381_7,Mesa Loop,0,ML-1,12
+1050,1,381_8,Mesa Loop,0,ML-1,12
+1050,1,381_9,Mesa Loop,0,ML-1,12
+1050,1,381_10,Mesa Loop,0,ML-1,12
+1050,1,381_11,Mesa Loop,0,ML-1,12
+1050,1,381_12,Mesa Loop,0,ML-1,12
+1050,1,381_13,Mesa Loop,0,ML-1,12
+1050,1,381_14,Mesa Loop,0,ML-1,12
+1050,1,381_15,Mesa Loop,0,ML-1,12
+1050,1,381_16,Mesa Loop,0,ML-1,12
+1050,1,381_17,Mesa Loop,0,ML-1,12
+1050,1,381_18,Mesa Loop,0,ML-1,12
+1050,1,381_19,Mesa Loop,0,ML-1,12
+1050,1,381_20,Mesa Loop,0,ML-1,12
+1050,1,381_21,Mesa Loop,0,ML-1,12
+1050,1,381_22,Mesa Loop,0,ML-1,12
+1050,1,381_23,Mesa Loop,0,ML-1,12
+1050,1,381_24,Mesa Loop,0,ML-1,12
+1050,1,381_25,Mesa Loop,0,ML-1,12
+1050,1,381_26,Mesa Loop,0,ML-1,12
+1050,1,381_27,Mesa Loop,0,ML-1,12
+1050,1,381_28,Mesa Loop,0,ML-1,12
+1050,1,381_29,Mesa Loop,0,ML-1,12
+1060,2,384_0,Grocery-Convoy,0,GC-1,16
+1060,2,384_1,Grocery-Convoy,0,GC-1,16
+1060,2,384_2,Grocery-Convoy,0,GC-1,16
+1060,2,384_3,Grocery-Convoy,0,GC-1,16
+1060,2,384_4,Grocery-Convoy,0,GC-1,16
+1060,2,384_5,Grocery-Convoy,0,GC-1,16
+1060,2,384_6,Grocery-Convoy,0,GC-1,16
+1060,2,384_7,Grocery-Convoy,0,GC-1,16
+1060,2,386_0,Grocery-Convoy,0,GC-2,16
+1060,2,386_1,Grocery-Convoy,0,GC-2,16
+1060,2,386_2,Grocery-Convoy,0,GC-2,16
+1060,2,386_3,Grocery-Convoy,0,GC-2,16
+1060,2,386_4,Grocery-Convoy,0,GC-2,16
+1060,2,386_5,Grocery-Convoy,0,GC-2,16
+1060,2,386_6,Grocery-Convoy,0,GC-2,16
+1010,1,387_0,Regents Express,0,R-2,10
+1010,1,387_1,Regents Express,0,R-2,10
+1010,1,387_2,Regents Express,0,R-2,10
+1010,1,387_3,Regents Express,0,R-2,10
+1010,1,387_4,Regents Express,0,R-2,10
+1010,1,387_5,Regents Express,0,R-2,10
+1010,1,388_0,Regents Express,0,R-2,10
+1010,1,388_1,Regents Express,0,R-2,10
+1010,1,388_2,Regents Express,0,R-2,10
+1010,1,388_3,Regents Express,0,R-2,10
+1010,1,388_4,Regents Express,0,R-2,10
+1010,1,388_5,Regents Express,0,R-2,10
+1010,1,388_6,Regents Express,0,R-2,10
+1010,1,388_7,Regents Express,0,R-2,10
+1010,1,388_8,Regents Express,0,R-2,10
+1010,1,389_0,Regents Express,0,R-2,10
+1010,1,389_1,Regents Express,0,R-2,10
+1010,1,389_2,Regents Express,0,R-2,10
+1020,1,390_0,SIO,0,S-1,17
+1020,1,390_1,SIO,0,S-1,17
+1020,1,390_2,SIO,0,S-1,17
+1020,1,390_3,SIO,0,S-1,17
+1020,1,390_4,SIO,0,S-1,17
+1020,1,390_5,SIO,0,S-1,17
+1020,1,390_6,SIO,0,S-1,17
+1020,1,390_7,SIO,0,S-1,17
+1020,1,390_8,SIO,0,S-1,17
+1020,1,390_9,SIO,0,S-1,17
+1020,1,390_10,SIO,0,S-1,17
+1020,1,390_11,SIO,0,S-1,17
+1020,1,390_12,SIO,0,S-1,17
+1020,1,390_13,SIO,0,S-1,17
+1020,1,390_14,SIO,0,S-1,17
+1020,1,390_15,SIO,0,S-1,17
+1020,1,390_16,SIO,0,S-1,17
+1020,1,390_17,SIO,0,S-1,17
+1020,1,390_18,SIO,0,S-1,17
+1020,1,390_19,SIO,0,S-1,17
+1020,1,390_20,SIO,0,S-1,17
+1020,1,390_21,SIO,0,S-1,17
+1020,1,390_22,SIO,0,S-1,17
+1020,1,390_23,SIO,0,S-1,17
+1020,1,390_24,SIO,0,S-1,17
+1020,1,390_25,SIO,0,S-1,17
+1020,1,390_26,SIO,0,S-1,17
+1020,1,390_27,SIO,0,S-1,17
+1020,1,392_0,SIO,0,S-2,17
+1020,1,392_1,SIO,0,S-2,17
+1020,1,392_2,SIO,0,S-2,17
+1020,1,392_3,SIO,0,S-2,17
+1020,1,392_4,SIO,0,S-2,17
+1020,1,392_5,SIO,0,S-2,17
+1020,1,392_6,SIO,0,S-2,17
+1020,1,392_7,SIO,0,S-2,17
+1020,1,392_8,SIO,0,S-2,17
+1020,1,392_9,SIO,0,S-2,17
+1020,1,392_10,SIO,0,S-2,17
+1020,1,392_11,SIO,0,S-2,17
+1020,1,392_12,SIO,0,S-2,17
+1020,1,392_13,SIO,0,S-2,17
+1020,1,392_14,SIO,0,S-2,17
+1020,1,392_15,SIO,0,S-2,17
+1020,1,392_16,SIO,0,S-2,17
+1020,1,392_17,SIO,0,S-2,17
+1020,1,392_18,SIO,0,S-2,17
+1020,1,392_19,SIO,0,S-2,17
+1020,1,392_20,SIO,0,S-2,17
+1020,1,392_21,SIO,0,S-2,17
+1020,1,392_22,SIO,0,S-2,17
+1020,1,392_23,SIO,0,S-2,17
+1020,1,392_24,SIO,0,S-2,17
+1020,2,393_0,SIO,0,S-2,17
+1020,2,393_1,SIO,0,S-2,17
+1020,2,393_2,SIO,0,S-2,17
+1020,2,393_3,SIO,0,S-2,17
+1020,2,393_4,SIO,0,S-2,17
+1020,2,393_5,SIO,0,S-2,17
+1020,2,393_6,SIO,0,S-2,17
+1020,2,393_7,SIO,0,S-2,17
+1020,2,393_8,SIO,0,S-2,17
+1020,2,393_9,SIO,0,S-2,17
+1020,2,393_10,SIO,0,S-2,17
+1020,2,393_11,SIO,0,S-2,17
+1020,2,393_12,SIO,0,S-2,17
+1020,2,393_13,SIO,0,S-2,17
+1020,2,393_14,SIO,0,S-2,17
+1020,2,393_15,SIO,0,S-2,17
+1040,2,394_0,Inside Loop,0,IL-2,14
+1040,2,394_1,Inside Loop,0,IL-2,14
+1040,2,394_2,Inside Loop,0,IL-2,14
+1040,2,394_3,Inside Loop,0,IL-2,14
+1040,2,394_4,Inside Loop,0,IL-2,14
+1040,2,394_5,Inside Loop,0,IL-2,14
+1040,2,394_6,Inside Loop,0,IL-2,14
+1040,2,394_7,Inside Loop,0,IL-2,14
+1040,2,394_8,Inside Loop,0,IL-2,14
+1040,2,394_9,Inside Loop,0,IL-2,14
+1040,2,394_10,Inside Loop,0,IL-2,14
+1040,2,394_11,Inside Loop,0,IL-2,14
+1040,2,394_12,Inside Loop,0,IL-2,14
+1040,2,394_13,Inside Loop,0,IL-2,14
+1040,2,394_14,Inside Loop,0,IL-2,14
+1040,2,394_15,Inside Loop,0,IL-2,14
+1040,1,395_0,Inside Loop,0,IL-2,14
+1040,1,395_1,Inside Loop,0,IL-2,14
+1040,1,395_2,Inside Loop,0,IL-2,14
+1040,1,395_3,Inside Loop,0,IL-2,14
+1040,1,395_4,Inside Loop,0,IL-2,14
+1040,1,395_5,Inside Loop,0,IL-2,14
+1040,1,395_6,Inside Loop,0,IL-2,14
+1040,1,395_7,Inside Loop,0,IL-2,14
+1040,1,395_8,Inside Loop,0,IL-2,14
+1040,1,395_9,Inside Loop,0,IL-2,14
+1040,1,395_10,Inside Loop,0,IL-2,14
+1040,1,395_11,Inside Loop,0,IL-2,14
+1040,1,395_12,Inside Loop,0,IL-2,14
+1040,1,395_13,Inside Loop,0,IL-2,14
+1040,1,395_14,Inside Loop,0,IL-2,14
+1040,1,395_15,Inside Loop,0,IL-2,14
+1040,1,395_16,Inside Loop,0,IL-2,14
+1040,1,395_17,Inside Loop,0,IL-2,14
+1040,1,395_18,Inside Loop,0,IL-2,14
+1040,1,395_19,Inside Loop,0,IL-2,14
+1040,1,395_20,Inside Loop,0,IL-2,14
+1040,1,395_21,Inside Loop,0,IL-2,14
+1040,1,395_22,Inside Loop,0,IL-2,14
+1040,1,395_23,Inside Loop,0,IL-2,14
+1040,1,395_24,Inside Loop,0,IL-2,14
+1040,1,395_25,Inside Loop,0,IL-2,14
+1040,1,395_26,Inside Loop,0,IL-2,14
+1040,1,395_27,Inside Loop,0,IL-2,14
+1040,1,395_28,Inside Loop,0,IL-2,14
+1040,1,395_29,Inside Loop,0,IL-2,14
+1030,1,396_0,Outside Loop,0,OL-2,15
+1030,1,396_1,Outside Loop,0,OL-2,15
+1030,1,396_2,Outside Loop,0,OL-2,15
+1030,1,396_3,Outside Loop,0,OL-2,15
+1030,1,396_4,Outside Loop,0,OL-2,15
+1030,1,396_5,Outside Loop,0,OL-2,15
+1030,1,396_6,Outside Loop,0,OL-2,15
+1030,1,396_7,Outside Loop,0,OL-2,15
+1030,1,396_8,Outside Loop,0,OL-2,15
+1030,1,396_9,Outside Loop,0,OL-2,15
+1030,1,396_10,Outside Loop,0,OL-2,15
+1030,1,396_11,Outside Loop,0,OL-2,15
+1030,1,396_12,Outside Loop,0,OL-2,15
+1030,1,396_13,Outside Loop,0,OL-2,15
+1030,1,396_14,Outside Loop,0,OL-2,15
+1030,1,396_15,Outside Loop,0,OL-2,15
+1030,1,396_16,Outside Loop,0,OL-2,15
+1030,1,396_17,Outside Loop,0,OL-2,15
+1030,1,396_18,Outside Loop,0,OL-2,15
+1030,1,396_19,Outside Loop,0,OL-2,15
+1030,1,396_20,Outside Loop,0,OL-2,15
+1030,1,396_21,Outside Loop,0,OL-2,15
+1030,1,396_22,Outside Loop,0,OL-2,15
+1030,1,396_23,Outside Loop,0,OL-2,15
+1030,1,396_24,Outside Loop,0,OL-2,15
+1050,1,397_0,Mesa Loop,0,ML-2,12
+1050,1,397_1,Mesa Loop,0,ML-2,12
+1050,1,397_2,Mesa Loop,0,ML-2,12
+1050,1,397_3,Mesa Loop,0,ML-2,12
+1050,1,397_4,Mesa Loop,0,ML-2,12
+1050,1,397_5,Mesa Loop,0,ML-2,12
+1050,1,397_6,Mesa Loop,0,ML-2,12
+1050,1,397_7,Mesa Loop,0,ML-2,12
+1050,1,397_8,Mesa Loop,0,ML-2,12
+1050,1,397_9,Mesa Loop,0,ML-2,12
+1050,1,397_10,Mesa Loop,0,ML-2,12
+1050,1,397_11,Mesa Loop,0,ML-2,12
+1050,1,397_12,Mesa Loop,0,ML-2,12
+1050,1,397_13,Mesa Loop,0,ML-2,12
+1050,1,397_14,Mesa Loop,0,ML-2,12
+1050,1,397_15,Mesa Loop,0,ML-2,12
+1050,1,397_16,Mesa Loop,0,ML-2,12
+1050,1,397_17,Mesa Loop,0,ML-2,12
+1050,1,397_18,Mesa Loop,0,ML-2,12
+1050,1,397_19,Mesa Loop,0,ML-2,12
+1050,1,397_20,Mesa Loop,0,ML-2,12
+1050,1,397_21,Mesa Loop,0,ML-2,12
+1050,1,397_22,Mesa Loop,0,ML-2,12
+1050,1,397_23,Mesa Loop,0,ML-2,12
+1050,1,397_24,Mesa Loop,0,ML-2,12
+1050,1,397_25,Mesa Loop,0,ML-2,12
+1050,1,398_0,Mesa Loop,0,ML-3,12
+1050,1,398_1,Mesa Loop,0,ML-3,12
+1050,1,398_2,Mesa Loop,0,ML-3,12
+1050,1,398_3,Mesa Loop,0,ML-3,12
+1050,1,398_4,Mesa Loop,0,ML-3,12
+1050,1,398_5,Mesa Loop,0,ML-3,12
+1050,1,398_6,Mesa Loop,0,ML-3,12
+1050,1,398_7,Mesa Loop,0,ML-3,12
+1050,1,398_8,Mesa Loop,0,ML-3,12
+1050,1,398_9,Mesa Loop,0,ML-3,12
+1050,1,398_10,Mesa Loop,0,ML-3,12
+1050,1,398_11,Mesa Loop,0,ML-3,12
+1050,1,398_12,Mesa Loop,0,ML-3,12
+1050,1,398_13,Mesa Loop,0,ML-3,12
+1050,1,398_14,Mesa Loop,0,ML-3,12
+1050,1,398_15,Mesa Loop,0,ML-3,12
+1050,1,398_16,Mesa Loop,0,ML-3,12
+1050,1,398_17,Mesa Loop,0,ML-3,12
+1050,1,398_18,Mesa Loop,0,ML-3,12
+1050,1,398_19,Mesa Loop,0,ML-3,12
+1050,1,398_20,Mesa Loop,0,ML-3,12
+1050,1,398_21,Mesa Loop,0,ML-3,12
+1050,1,398_22,Mesa Loop,0,ML-3,12
+1050,1,398_23,Mesa Loop,0,ML-3,12
