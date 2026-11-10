@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: gtfs_rt
+    description: >
+      Raw GTFS-Realtime vehicle positions polled from the Triton Transit feed
+      (Spare Labs) every ~20 seconds by ingestion/poller.py and the scheduled
+      GitHub Actions collector. One Parquet file per collection day/run.
+    meta:
+      external_location: "read_parquet('{{ var('data_dir') }}/raw/positions/*.parquet', union_by_name = true)"
+    tables:
+      - name: vehicle_positions
+        description: One row per vehicle per poll. Duplicate rows occur when a vehicle has not reported a new fix since the last poll.
+        columns:
+          - name: route_id
+          - name: vehicle_id
+          - name: lat
+          - name: lon
+          - name: vehicle_timestamp
+            description: Unix epoch seconds (UTC) of the GPS fix, reported by the vehicle.
+          - name: ingested_at
+            description: When the poller received the row.
+
+  - name: gtfs
+    description: >
+      Static GTFS schedule exports, one folder per feed version under
+      data/gtfs/<feed_version>/. Each feed covers one service period
+      (e.g. summer, fall) defined by its calendar.txt.
+    meta:
+      external_location: "read_csv('{{ var('data_dir') }}/gtfs/*/{name}.txt', header = true, all_varchar = true, filename = true, union_by_name = true)"
+    tables:
+      - name: routes
+      - name: stops
+      - name: trips
+      - name: stop_times
+      - name: calendar
+      - name: calendar_dates
