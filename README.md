@@ -1,65 +1,47 @@
 # TritonETA 🚎
 
-> **Status: 🚧 In Progress**
+[![dbt build](https://github.com/sharonkodali/tritoneta/actions/workflows/dbt_build.yml/badge.svg)](https://github.com/sharonkodali/tritoneta/actions/workflows/dbt_build.yml)
 
-A data science and data engineering project focused on improving the UC San Diego student transit experience.
+**Real-time data pipeline and arrival-time modeling for UC San Diego shuttles.** UCSD's live transit feed reports where each shuttle is, but not whether it's late. TritonETA derives that: it turns raw GPS pings into a stop-level delay metric, a reliability scorecard, and a labeled training set for predicting arrival times.
 
-TritonETA will use **UCSD Triton Transit data** to create a more useful, class-focused transit product that helps students figure out **which shuttle to take, when to leave, and when they can expect to arrive at class.**
+![UCSD shuttle schedule adherence by route](docs/img/on_time_by_route.png)
 
-## 🎯 Goal
+## What's built
 
-Build a better transit experience for UCSD students by combining:
+| | |
+| --- | --- |
+| **Data collected** | 180K+ GPS events from 28 shuttles on 6 routes (Sep 10 – Oct 12, 2026), plus scheduled collection via GitHub Actions |
+| **Delay metric** | Stop passages interpolated along GPS segments at 61 stops, then each vehicle lap matched to its best scheduled trip |
+| **Warehouse** | 15 dbt models on DuckDB (staging → intermediate → marts) with 29 data tests, run in CI |
+| **Results** | 30,946 stop visits matched to the schedule (88%); 63% on time overall, from 86% (Outside Loop) to 45% (Regents Express) |
+| **ML-ready output** | 27,166-row training set with leakage-safe features and a time-based train/test split |
 
-- 🚌 UCSD shuttle routes and schedules
-- 📍 Real-time shuttle locations
-- 🗺️ Campus buildings and nearby locations
-- 🚶 Walking routes
-- 🤖 Machine learning for more realistic arrival-time predictions
+Full methodology, lineage diagram, and known limitations: **[docs/data-pipeline.md](docs/data-pipeline.md)**.
 
-## 💡 Planned Product
+## Run it
 
-Students will be able to:
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements-data.txt
+cd dbt && dbt build --profiles-dir . && cd ..   # builds all models, runs all tests
+python analysis/plot_route_reliability.py         # regenerates the chart above
+```
 
-- Search for a class/building
-- Enter their starting location and class time
-- See relevant shuttle routes and nearby stops
-- View live shuttle locations
-- Get predicted arrival times
-- Get a recommended time to leave
-- Compare walking vs. taking the shuttle
-
-## 📊 Data Science
-
-The ML component will focus on **predicting realistic shuttle arrival times** using historical UCSD transit data.
-
-Potential features:
-
-- Route
-- Stop
-- Time of day
-- Day of week
-- Vehicle location
-- Historical travel time
-- Historical delays
-
-We will compare the model's predictions against scheduled arrival times.
-
-## 🔄 Planned Data Pipeline
+## Architecture
 
 ```text
-UCSD GTFS + Real-Time Data
-          ↓
-     Data Ingestion
-          ↓
-    DuckDB / dbt
-          ↓
-   Data Cleaning + Features
-          ↓
-    ML ETA Prediction
-          ↓
-      Backend API
-          ↓
-    Interactive Web App
+GTFS-Realtime feed ──(poller / GitHub Actions, every 20s)──▶ Parquet
+GTFS static schedules (per quarter) ─────────────────────────▶ data/gtfs/
+                         │
+                         ▼
+          dbt on DuckDB: staging → stop passages → runs → delays
+                         │
+          ┌──────────────┼───────────────┐
+          ▼              ▼               ▼
+   fct_stop_delays  agg_route_stop_  eta_training_set.parquet
+                    performance          │
+                                         ▼
+                               ETA model → API → web app (in progress)
 ```
 
 ## 👥 Team
@@ -70,36 +52,12 @@ UCSD GTFS + Real-Time Data
 - **ML / Data Science:** feature engineering, ETA prediction, model evaluation
 - **Product / Frontend:** map, routing experience, UI/UX, deployment
 
-## 📅 Current Plan
+## Roadmap
 
-### Week 1
-
-- [ ] Set up repository
-- [ ] Explore UCSD GTFS data
-- [ ] Set up database
-- [ ] Start collecting real-time vehicle data
-
-### Week 2
-
-- [ ] Clean and process transit data
-- [ ] Build historical dataset
-- [ ] Develop initial ML model
-- [ ] Begin frontend/map
-
-### Week 3
-
-- [ ] Connect ML + frontend
-- [ ] Add class-focused routing
-- [ ] Improve UI/UX
-- [ ] Test and deploy
-
-## 🚧 Current Status
-
-**Data pipeline: working.** Raw GPS pings are turned into a stop-level delay metric and a labeled training set for the ETA model. See [docs/data-pipeline.md](docs/data-pipeline.md) for lineage, methodology, and results.
-
-- 180K GPS events from 28 shuttles on 6 routes (Sep 10 – Oct 12, 2026), with scheduled GitHub Actions collection going forward
-- 15 dbt models (staging → intermediate → marts) with 29 data tests
-- 30,946 stop visits matched to the schedule; 63% on time overall
-- 27,166-row training set with a time-based train/test split
-
-**Next:** train and evaluate the arrival-time model, then connect predictions to the backend API and map.
+- [x] Real-time GPS collection (local poller + scheduled GitHub Actions)
+- [x] GTFS schedule processing across service periods
+- [x] Stop-level delay metric and reliability scorecard
+- [x] Leakage-safe ETA training set
+- [ ] Train and evaluate the arrival-time model against a schedule-only baseline
+- [ ] Backend API serving predictions
+- [ ] Web app: pick a class building and time, get which shuttle to take and when to leave
