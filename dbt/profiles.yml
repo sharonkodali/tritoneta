@@ -1,0 +1,8 @@
+tritoneta:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/warehouse.duckdb
+      threads: 4
+      extensions: [icu]

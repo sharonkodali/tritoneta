@@ -1,0 +1,33 @@
+name: tritoneta
+version: "1.0.0"
+config-version: 2
+profile: tritoneta
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+target-path: target
+clean-targets: [target, dbt_packages]
+
+vars:
+  # Paths are relative to the dbt/ directory, which is where dbt is run from.
+  data_dir: "../data"
+  local_timezone: "America/Los_Angeles"
+  # A GPS segment counts as passing a stop if it comes within this many meters.
+  stop_match_radius_m: 50
+  # Ignore segments with long gaps between pings (signal loss, layovers).
+  max_ping_gap_seconds: 120
+  # Matches further than this from any scheduled visit are treated as unmatched.
+  max_schedule_offset_minutes: 20
+
+models:
+  tritoneta:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: table
+      +schema: intermediate
+    marts:
+      +materialized: table
+      +schema: marts
