@@ -32,32 +32,40 @@ def init_db():
     return conn
 
 
-def poll_once(conn):
+def fetch_positions():
+    """Fetch the live feed and return one dict per vehicle with a position."""
     response = requests.get(FEED_URL, timeout=10)
     response.raise_for_status()
 
     feed = gtfs_realtime_pb2.FeedMessage()
     feed.ParseFromString(response.content)
 
-    rows_written = 0
+    rows = []
     for entity in feed.entity:
         if not entity.HasField("vehicle"):
             continue
         vehicle = entity.vehicle
-        route_id = vehicle.trip.route_id if vehicle.HasField("trip") else None
-        vehicle_id = vehicle.vehicle.id if vehicle.HasField("vehicle") else None
-        lat = vehicle.position.latitude if vehicle.HasField("position") else None
-        lon = vehicle.position.longitude if vehicle.HasField("position") else None
-        vehicle_timestamp = vehicle.timestamp if vehicle.HasField("timestamp") else None
-
-        conn.execute(
-            "INSERT INTO raw_positions (route_id, vehicle_id, lat, lon, vehicle_timestamp) VALUES (?, ?, ?, ?, ?)",
-            (route_id, vehicle_id, lat, lon, vehicle_timestamp),
+        rows.append(
+            {
+                "route_id": vehicle.trip.route_id if vehicle.HasField("trip") else None,
+                "vehicle_id": vehicle.vehicle.id if vehicle.HasField("vehicle") else None,
+                "lat": vehicle.position.latitude if vehicle.HasField("position") else None,
+                "lon": vehicle.position.longitude if vehicle.HasField("position") else None,
+                "vehicle_timestamp": vehicle.timestamp if vehicle.HasField("timestamp") else None,
+            }
         )
-        rows_written += 1
+    return rows
 
+
+def poll_once(conn):
+    rows = fetch_positions()
+    conn.executemany(
+        "INSERT INTO raw_positions (route_id, vehicle_id, lat, lon, vehicle_timestamp) "
+        "VALUES (:route_id, :vehicle_id, :lat, :lon, :vehicle_timestamp)",
+        rows,
+    )
     conn.commit()
-    logger.info(f"Polled feed: wrote {rows_written} rows")
+    logger.info(f"Polled feed: wrote {len(rows)} rows")
 
 
 def main():
