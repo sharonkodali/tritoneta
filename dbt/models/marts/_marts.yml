@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: fct_stop_delays
+    description: >
+      Stop-level schedule adherence. Each observed visit is matched to a
+      scheduled visit through its run's best-matching trip; delay_seconds is
+      observed minus scheduled arrival. Positive = late, negative = early.
+    columns:
+      - name: visit_id
+        data_tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('int_observed_stop_visits')
+                field: visit_id
+      - name: delay_seconds
+        data_tests: [not_null]
+      - name: punctuality
+        description: early (> 1 min early), on_time (1 min early to 5 min late), late (> 5 min late).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [early, on_time, late]
+      - name: run_match_quality_seconds
+        description: Mean absolute offset of the run against its assigned trip; lower means a cleaner match.
+
+  - name: fct_eta_training_set
+    description: >
+      Labeled rows for the arrival-time model, exported to
+      data/processed/eta_training_set.parquet. Features use only information
+      available before the vehicle reaches the stop. The last 7 days are the
+      test split.
+    columns:
+      - name: delay_seconds
+        description: Label.
+      - name: split
+        description: train or test (time-based).
+      - name: prev_stop_delay_seconds
+        description: The same vehicle's delay at its previous stop in this run.
+      - name: hist_route_hour_mean_delay_seconds
+        description: Mean delay for this route and hour on strictly earlier days (null on the first day seen).
+
+  - name: agg_route_stop_performance
+    description: Reliability scorecard per route and stop (on-time rate, delay percentiles, observed vs scheduled headways).
+    columns:
+      - name: on_time_rate
+        data_tests: [not_null]
